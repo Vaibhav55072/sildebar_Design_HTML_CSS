@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Design</title>
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .slidebar-container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 280px;
+            height: 100vh;
+            background-color: #686464;
+            color: white;
+            padding-top: 20px;
+            position: fixed;
+
+            text-align: center;
+            margin-bottom: 20px;
+            font: bold;
+        }
+
+        .nav-list {
+            padding: 0;
+            cursor: pointer;
+
+            margin-bottom: 10px;
+        }
+
+        .nav-list a {
+            display: block;
+            padding: 10px;
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            border: 1px solid #555;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .nav-list a:hover {
+            background-color: #555;
+            border-color: #666;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            margin-left: 275px;
+            width: 100%;
+        }
+
+        .section {
+            margin-bottom: 40px;
+
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .section h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        /* Media Queries */
+
+        /* Mobile Devices (up to 767px) */
+        @media (max-width: 767px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 10px;
+            }
+
+            .section h1 {
+                font-size: 24px;
+            }
+
+            .section {
+                font-size: 14px;
+            }
+        }
+
+       
+    </style>
+</head>
+
+<body class="body">
+
+    <div class="slidebar-container">
+        <div class="sidebar">
+
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li><br>
+                <li><a href="#about-us">About Us</a></li><br>
+                <li><a href="#our-services">Our Services</a></li><br>
+                <li><a href="#contact-us">Contact Us</a></li><br>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div id="home" class="section">
+                <h1>Welcome to My Website</h1>
+
+                <p>
+                <h3>(Here is dummy website information)</h3><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula, urna eu fringilla feugiat,
+                metus odio dictum sapien, non sollicitudin nisl nulla vel turpis. Vivamus scelerisque orci nec
+                lectus posuere, ut tincidunt tortor feugiat. Integer nec dui magna. Phasellus a ex vel enim
+                efficitur malesuada. Sed in malesuada est, sit amet feugiat magna.
+
+                Why Choose Us?
+
+                Quality: Curabitur et lacus nec leo placerat pretium. Vivamus non eros at eros sagittis pretium ut
+                et sem.
+                Experience: Donec a justo vitae nisi lacinia tincidunt in sit amet tortor. Cras sed dui at sapien
+                ultrices congue.
+                Customer Satisfaction: Proin tristique lorem et venenatis sollicitudin. Suspendisse et libero a erat
+                aliquam congue.
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                Quisque venenatis eros vel diam fermentum, ac euismod nunc consequat. Nunc interdum metus at
+                vehicula varius. Aenean ac orci ac sem malesuada tincidunt.
+
+                Morbi scelerisque nulla ac ligula viverra, eget cursus tortor fringilla. Vestibulum ante ipsum
+                primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce tempor ligula nec enim
+                fermentum tincidunt. Ut at ipsum eros. Integer at sagittis leo. Nam auctor cursus purus, eget
+                fringilla arcu iaculis id.
+
+                <h3>Thank you for visiting, and we hope you enjoy your experience with us!</h3>
+                </p>
+                <hr>
+
+            </div>
+
+
+            <div id="about-us" class="section">
+                <h1>About Us</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus assumenda mollitia laborum neque
+                    placeat, perspiciatis earum iste, eveniet facilis maxime ipsa consectetur iure facere consequuntur
+                    animi minima itaque, corporis fuga temporibus provident cum voluptas ad officiis ex? Nihil
+                    perferendis aut eos aperiam, pariatur sed! Dolores distinctio facilis autem unde in, eveniet aperiam
+                    at odit accusamus natus officiis minima suscipit eos magnam nemo ipsa eum laudantium quasi!
+                    Doloribus ipsam, repellat ipsa officia doloremque laudantium fugiat iure blanditiis nesciunt eveniet
+                    consequuntur quam error. Tempora, consequuntur aliquid. Distinctio, quas labore quisquam odit minus
+                    necessitatibus cupiditate laborum cumque asperiores voluptatem numquam quidem et non assumenda
+                    incidunt facilis autem. Vero dicta voluptatem quae eligendi inventore sed iusto quibusdam laboriosam
+                    quidem corrupti? Beatae explicabo voluptate impedit, voluptatem fugiat itaque. Inventore adipisci
+                    eligendi quam qui ex in vitae impedit dignissimos natus accusamus quos sit esse harum quas aperiam
+                    commodi quae illum eos, nulla veritatis maiores odio debitis temporibus. Quos reprehenderit
+                    quibusdam, temporibus ratione sit similique, repellat sequi perferendis, quaerat repellendus
+                    delectus a labore dicta. Praesentium officia dolorem magni eius vero excepturi reiciendis voluptatum
+                    cumque pariatur, voluptatem illum dolorum dignissimos placeat! Voluptatum rem sequi magni
+                    consequuntur modi consequatur beatae porro hic ipsa facere, minus officia quasi! Officiis,
+                    perferendis.</p>
+                <h3>This Is About Us Page</h3>
+
+
+
+            </div>
+
+
+            <div id="our-services" class="section">
+                <h1>Our Services</h1>
+
+                <p>
+                <h3>(Here is dummy our services information)</h3><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula, urna eu
+                <hr>
+
+            </div>
+
+
+            <div id="contact-us" class="section">
+                <h1>Contact Us</h1>
+
+                <p>
+                <h3>(Here is dummy contact us information)</h3><br><br>
+                <hr>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
